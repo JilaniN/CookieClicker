@@ -58,7 +58,7 @@ function incrementScore()
         document.getElementById("Kotlin").style.backgroundColor = "red";
         document.getElementById("Kotlin").style.opacity = "1";
     }
-    if (score >= pr) {
+    if (score >= prixPython) {
         document.getElementById("Python").style.backgroundColor = "red";
         document.getElementById("Python").style.opacity = "1";
     }
@@ -71,8 +71,8 @@ function incrementScore()
         document.getElementById("swift").style.opacity = "1";
     }
     if ( score >= prixSql ) {
-        document.getElementById("SQL").style.backgroundColor = "grey";
-        document.getElementById("SQL").style.opacity = "0.3";
+        document.getElementById("SQL").style.backgroundColor = "red";
+        document.getElementById("SQL").style.opacity = "1";
     }
     
     
