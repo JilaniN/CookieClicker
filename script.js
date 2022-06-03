@@ -1,56 +1,43 @@
 const elements = {
-    score: null,
+    score: 0,
+    displayScore: null,
     multiplier: null,
     coffee: null,
     autoClick: null,
 }
 
+const click = {
+    scoreParClic: 1
+}
+
+// Lier les elements aux id
+elements.score = document.querySelector('#score');
+elements.multiplier = document.querySelector('#multiplier');
+elements.coffee = document.querySelector('#coffee');
+elements.displayScore = document.querySelector('#displayScore')
+
 // Affiche le bouton Score
 
 
 
-// Fonction qui incrémente le score quand tu cliques.
+// Fonction qui incrémente le score quand tu cliques + affichage du score.
+
+let score = 0;
 
 function incrementScore()
-{
-    var score = parseInt(document.getElementById('number').value, 10);
-    score = isNaN(score) ? 0 : score;
+{   
     score++;
-    document.getElementById('number').value = score;
+    return elements.displayScore.innerHTML = score;
 }
-
-/*FONCTION INITIALE (POUR CORRECTION SI BESOIN)
-
-function incrementValue()
-{
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
-
-    COTE HTML CA RESSEMBLE A CA :
-
-    <form>
-   <input type="text" id="number" value="0"/>
-   <input type="button" onclick="incrementValue()" value="Increment Value" />
-</form>*/
-
-
-// AFFICHAGE DU SCORE
-
+console.log(score);
 
 // Le multiplicateur 
 
 function multiClick() {
-    if (!elements.isxTwoApplied) {
-       if (elements.foodPerClick >=2) {
-          elements.foodPerClick *= 2
-          elements.isxTwoApplied = true
-       } else{
-           
-       }
-
-    //rest of the code
-  }
+    while (multiclic === true){
+       return elements.score*2; //onclick
+    }
+  
 }
+
+// Prix du multiplicateur qui augmente
