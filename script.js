@@ -1,9 +1,5 @@
 const elements = {
-    score: 0,
     displayScore: null,
-    multiplier: null,
-    coffee: null,
-    autoClick: null,
 }
 
 const click = {
@@ -11,10 +7,9 @@ const click = {
 }
 
 // Lier les elements aux id
-elements.score = document.querySelector('#score');
 elements.multiplier = document.querySelector('#multiplier');
 elements.coffee = document.querySelector('#coffee');
-elements.displayScore = document.querySelector('#displayScore')
+elements.displayScore = document.querySelector('#score')
 
 // Affiche le bouton Score
 
