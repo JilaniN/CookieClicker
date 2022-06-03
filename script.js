@@ -19,6 +19,7 @@ elements.displayScore = document.querySelector('#score')
 
 let score = 0;
 let increment = 1;
+let prixHtml = 5;
 
 function incrementScore()
 {   
@@ -29,15 +30,15 @@ console.log(score);
 
 // Le multiplicateur 
 
-let multiclic = true;
-
-console.log(multiclic);
 
 // Bouton d'upgrade le clic sur le bouton "enter" passe à +2
 
-function multiClick() {
+function upgradeHtml() {
+    if(score >= prixHtml){
     increment = increment + 1; 
-
+    score = score - prixHtml;
+    prixHtml = prixHtml + 50;
+    }
     }
 
 
