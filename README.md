@@ -2,6 +2,13 @@
 
 ## Codeur Clicker
 
+### Idées à mettre en place
+
+Ajouter des items qui feront office de x2 en modifiant la mise en page.  
+Afficher le prix de chaque upgrade.  
+
+## Etapes à suivre
+
 ### Step 1: base structure
 
 Write the base structure for the project in HTML, CSS and JavaScript. Within the HTML, put a click button which will increment a counter and a label initialised at 0 to display said counter.  
@@ -13,7 +20,6 @@ EN COURS
 In your JavaScript prepare variables to allow you to control your button and label. You will also need a variable to keep track of the score.  
 
   
-
 ### Step 3: increase the score
 
 When you click the button, increase the variable storing the score by 1, then display the current score inside the label.
