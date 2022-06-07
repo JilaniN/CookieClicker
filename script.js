@@ -26,8 +26,8 @@ let prixC = 7000;
 let prixJava = 40000;
 let prixKotlin = 220000;
 let prixPython = 1200000;
-let prixRuby = 400;
-let prixSwift = 450;
+let prixRuby = 6600000;
+let prixSwift = 36000000;
 let prixSql = 500;
 elements.displayScore.innerHTML = score;
 elements.displayIncrement.innerHTML = increment;
@@ -73,311 +73,372 @@ function incrementScore()
     score = score + increment;
     //modification opacité bouton html
     if( prixHtml >= 5){
-        document.getElementById("HTML").style.backgroundColor = "red";
-        document.getElementById("HTML").style.opacity = "0.1";
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.opacity = "0.55";
     }
     if( prixHtml >= 55){
-        document.getElementById("HTML").style.backgroundColor = "red";
-        document.getElementById("HTML").style.opacity = "0.2";
-    }
-    if( prixHtml >= 105){
-        document.getElementById("HTML").style.backgroundColor = "red";
-        document.getElementById("HTML").style.opacity = "0.3";
-    }
-    if(  prixHtml >= 155){
-        document.getElementById("HTML").style.backgroundColor = "red";
-        document.getElementById("HTML").style.opacity = "0.4";
-    }
-    if(  prixHtml >= 205){
-        document.getElementById("HTML").style.backgroundColor = "red";
-        document.getElementById("HTML").style.opacity = "0.5";
-    }
-    if(  prixHtml >= 255){
-        document.getElementById("HTML").style.backgroundColor = "red";
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "0.6";
     }
-    if(  prixHtml >= 305){
-        document.getElementById("HTML").style.backgroundColor = "red";
+    if( prixHtml >= 105){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.opacity = "0.65";
+    }
+    if(  prixHtml >= 155){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "0.7";
     }
-    if(  prixHtml >= 355){
-        document.getElementById("HTML").style.backgroundColor = "red";
+    if(  prixHtml >= 205){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.opacity = "0.75";
+    }
+    if(  prixHtml >= 255){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "0.8";
     }
-    if(  prixHtml >= 405){
-        document.getElementById("HTML").style.backgroundColor = "red";
+    if(  prixHtml >= 305){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.opacity = "0.85";
+    }
+    if(  prixHtml >= 355){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "0.9";
     }
+    if(  prixHtml >= 405){
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.opacity = "0.95";
+    }
     if(  prixHtml >= 455){
-        document.getElementById("HTML").style.backgroundColor = "red";
+        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "1";
     }
  //modification  opacité bouton javascript
     if (  prixJs >= 250){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
-        document.getElementById("JavaScript").style.opacity = "0.1";
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.opacity = "0.55";
     }
     if ( prixJs >= 500){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
-        document.getElementById("JavaScript").style.opacity = "0.2";
-    }
-    if ( prixJs >= 750){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
-        document.getElementById("JavaScript").style.opacity = "0.3";
-    }
-    if ( prixJs >= 1000){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
-        document.getElementById("JavaScript").style.opacity = "0.4";
-    }
-    if ( prixJs >= 1250){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
-        document.getElementById("JavaScript").style.opacity = "0.5";
-    }
-    if ( prixJs >= 1500){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
         document.getElementById("JavaScript").style.opacity = "0.6";
     }
-    if ( prixJs >= 1750){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
+    if ( prixJs >= 750){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.opacity = "0.65";
+    }
+    if ( prixJs >= 1000){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
         document.getElementById("JavaScript").style.opacity = "0.7";
     }
-    if ( prixJs >= 2000){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
+    if ( prixJs >= 1250){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.opacity = "0.75";
+    }
+    if ( prixJs >= 1500){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
         document.getElementById("JavaScript").style.opacity = "0.8";
     }
-    if ( prixJs >= 2250){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
+    if ( prixJs >= 1750){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.opacity = "0.85";
+    }
+    if ( prixJs >= 2000){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
         document.getElementById("JavaScript").style.opacity = "0.9";
     }
+    if ( prixJs >= 2250){
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.opacity = "0.95";
+    }
     if ( prixJs >= 2500){
-        document.getElementById("JavaScript").style.backgroundColor = "red"
+        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
         document.getElementById("JavaScript").style.opacity = "1";
     }
     //modification  opacité bouton PHP
     if ( prixPhp >= 1300){
-        document.getElementById("PHP").style.backgroundColor = "red";
-        document.getElementById("PHP").style.opacity = "0.1";
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.opacity = "0.55";
     }
     if ( prixPhp >= 2600){
-        document.getElementById("PHP").style.backgroundColor = "red";
-        document.getElementById("PHP").style.opacity = "0.2";
-    }
-    if ( prixPhp >= 3900){
-        document.getElementById("PHP").style.backgroundColor = "red";
-        document.getElementById("PHP").style.opacity = "0.3";
-    }
-    if ( prixPhp >= 5200){
-        document.getElementById("PHP").style.backgroundColor = "red";
-        document.getElementById("PHP").style.opacity = "0.4";
-    }
-    if ( prixPhp >= 6500){
-        document.getElementById("PHP").style.backgroundColor = "red";
-        document.getElementById("PHP").style.opacity = "0.5";
-    }
-    if ( prixPhp >= 7800){
-        document.getElementById("PHP").style.backgroundColor = "red";
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
         document.getElementById("PHP").style.opacity = "0.6";
     }
-    if ( prixPhp >= 9100){
-        document.getElementById("PHP").style.backgroundColor = "red";
+    if ( prixPhp >= 3900){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.opacity = "0.65";
+    }
+    if ( prixPhp >= 5200){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
         document.getElementById("PHP").style.opacity = "0.7";
     }
-    if ( prixPhp >= 10400){
-        document.getElementById("PHP").style.backgroundColor = "red";
+    if ( prixPhp >= 6500){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.opacity = "0.75";
+    }
+    if ( prixPhp >= 7800){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
         document.getElementById("PHP").style.opacity = "0.8";
     }
-    if ( prixPhp >= 11700){
-        document.getElementById("PHP").style.backgroundColor = "red";
+    if ( prixPhp >= 9100){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.opacity = "0.85";
+    }
+    if ( prixPhp >= 10400){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
         document.getElementById("PHP").style.opacity = "0.9";
     }
+    if ( prixPhp >= 11700){
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.opacity = "0.95";
+    }
     if ( prixPhp >= 13000){
-        document.getElementById("PHP").style.backgroundColor = "red";
+        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
         document.getElementById("PHP").style.opacity = "1";
     }
     //modification  opacité bouton c
     if ( prixC >= 7000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.1";
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.55";
     }
     if ( prixC >= 14000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.2";
-    }
-    if ( prixC >= 21000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.3";
-    }  
-    if ( prixC >= 28000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.4";
-    }
-    if ( prixC >= 35000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.5";
-    }
-    if ( prixC >= 42000){
-        document.getElementById("C").style.backgroundColor = "red";
+        document.getElementById("C").style.backgroundColor = "#F0980C";
         document.getElementById("C").style.opacity = "0.6";
     }
-    if ( prixC >= 49000){
-        document.getElementById("C").style.backgroundColor = "red";
+    if ( prixC >= 21000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.65";
+    }  
+    if ( prixC >= 28000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
         document.getElementById("C").style.opacity = "0.7";
     }
-    if ( prixC >= 56000){
-        document.getElementById("C").style.backgroundColor = "red";
+    if ( prixC >= 35000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.75";
+    }
+    if ( prixC >= 42000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
         document.getElementById("C").style.opacity = "0.8";
     }
+    if ( prixC >= 49000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.85";
+    }
+    if ( prixC >= 56000){
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.90";
+    }
     if ( prixC >= 63000){
-        document.getElementById("C").style.backgroundColor = "red";
-        document.getElementById("C").style.opacity = "0.9";
+        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.opacity = "0.95";
     }
     if ( prixC >= 70000){
-        document.getElementById("C").style.backgroundColor = "red";
+        document.getElementById("C").style.backgroundColor = "#F0980C";
         document.getElementById("C").style.opacity = "1";
     }
     //modification  opacité bouton java
     if (prixJava >= 40000) {
-        document.getElementById("Java").style.backgroundColor = "red";
-        document.getElementById("Java").style.opacity = "0.1"
+        document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.opacity = "0.55"
     }
     if (prixJava >= 80000) {
-        document.getElementById("Java").style.backgroundColor = "red";
-        document.getElementById("Java").style.opacity = "0.2"
+        document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.opacity = "0.6"
     }
     if (prixJava >= 120000) {
-        document.getElementById("Java").style.backgroundColor = "red";
-        document.getElementById("Java").style.opacity = "0.3"
+        document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.opacity = "0.65"
     }
     if (prixJava >= 160000) {
-        document.getElementById("Java").style.backgroundColor = "red";
-        document.getElementById("Java").style.opacity = "0.4"
+        document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.opacity = "0.7"
     }
     if (prixJava >= 200000) {
-       document.getElementById("Java").style.backgroundColor = "red";
-       document.getElementById("Java").style.opacity = "0.5"
+       document.getElementById("Java").style.backgroundColor = "#D96900";
+       document.getElementById("Java").style.opacity = "0.75"
     }
     if (prixJava >= 240000) {
-      document.getElementById("Java").style.backgroundColor = "red";
-        document.getElementById("Java").style.opacity = "0.6"
+      document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.opacity = "0.8"
         }
     if (prixJava >= 280000) {
-            document.getElementById("Java").style.backgroundColor = "red";
-            document.getElementById("Java").style.opacity = "0.7"
+            document.getElementById("Java").style.backgroundColor = "#D96900";
+            document.getElementById("Java").style.opacity = "0.85"
         }  
  if (prixJava >= 320000) {
-            document.getElementById("Java").style.backgroundColor = "red";
-            document.getElementById("Java").style.opacity = "0.8"
-        }
-  if (prixJava >= 360000) {
-            document.getElementById("Java").style.backgroundColor = "red";
+            document.getElementById("Java").style.backgroundColor = "#D96900";
             document.getElementById("Java").style.opacity = "0.9"
         }
+  if (prixJava >= 360000) {
+            document.getElementById("Java").style.backgroundColor = "#D96900";
+            document.getElementById("Java").style.opacity = "0.95"
+        }
   if (prixJava >= 400000) {
-            document.getElementById("Java").style.backgroundColor = "red";
+            document.getElementById("Java").style.backgroundColor = "#D96900";
             document.getElementById("Java").style.opacity = "1"
         }
     //modification  opacité bouton Kotlin
     if (prixKotlin >= 220000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
-        document.getElementById("Kotlin").style.opacity = "0.1";
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.opacity = "0.55";
     }
     if (prixKotlin >= 440000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
-        document.getElementById("Kotlin").style.opacity = "0.2";
-    }
-    if (prixKotlin >= 660000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
-        document.getElementById("Kotlin").style.opacity = "0.3";
-    }
-    if (prixKotlin >= 880000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
-        document.getElementById("Kotlin").style.opacity = "0.4";
-    }
-    if (prixKotlin >= 1100000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
-        document.getElementById("Kotlin").style.opacity = "0.5";
-    }
-    if (prixKotlin >= 1320000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
         document.getElementById("Kotlin").style.opacity = "0.6";
     }
-    if (prixKotlin >= 1540000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
+    if (prixKotlin >= 660000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.opacity = "0.65";
+    }
+    if (prixKotlin >= 880000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
         document.getElementById("Kotlin").style.opacity = "0.7";
     }
-    if (prixKotlin >= 1760000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
+    if (prixKotlin >= 1100000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.opacity = "0.75";
+    }
+    if (prixKotlin >= 1320000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
         document.getElementById("Kotlin").style.opacity = "0.8";
     }
-    if (prixKotlin >= 1980000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
+    if (prixKotlin >= 1540000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.opacity = "0.85";
+    }
+    if (prixKotlin >= 1760000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
         document.getElementById("Kotlin").style.opacity = "0.9";
+    }
+    if (prixKotlin >= 1980000){
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.opacity = "0.95";
     }   
      if (prixKotlin >= 2200000){
-        document.getElementById("Kotlin").style.backgroundColor = "red";
+        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
         document.getElementById("Kotlin").style.opacity = "1";
     }
     //modification  opacité bouton Python
     if (prixPython >= 1200000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.1";
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.55";
     }
     if (prixPython >= 2400000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.2";
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.6";
     }  
     if (prixPython >= 3600000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.3";
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.65";
     }
     if (prixPython >= 4800000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.4";
-    }
-    if (prixPython >= 6000000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.5";
-    }
-    if (prixPython >= 7200000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.6";
-    }
-    if (prixPython >= 8400000) {
-        document.getElementById("Python").style.backgroundColor = "red";
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
         document.getElementById("Python").style.opacity = "0.7";
     }
-    if (prixPython >= 9600000) {
-        document.getElementById("Python").style.backgroundColor = "red";
+    if (prixPython >= 6000000) {
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.75";
+    }
+    if (prixPython >= 7200000) {
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
         document.getElementById("Python").style.opacity = "0.8";
     }
-    if (prixPython >= 10800000) {
-        document.getElementById("Python").style.backgroundColor = "red";
+    if (prixPython >= 8400000) {
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.85";
+    }
+    if (prixPython >= 9600000) {
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
         document.getElementById("Python").style.opacity = "0.9";
     }
+    if (prixPython >= 10800000) {
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.opacity = "0.95";
+    }
     if (prixPython >= 12000000) {
-        document.getElementById("Python").style.backgroundColor = "red";
+        document.getElementById("Python").style.backgroundColor = "#F0490C";
         document.getElementById("Python").style.opacity = "1";
     }
     //modification  opacité bouton Ruby
     if (prixRuby >= 6600000 ) {
-        document.getElementById("Ruby").style.backgroundColor ="red"
-        document.getElementById("Ruby").style.opacity = "0.1"
+        document.getElementById("Ruby").style.backgroundColor ="#EB371F"
+        document.getElementById("Ruby").style.opacity = "0.55"
     }
     if (prixPython >= 13200000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.2";
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.6";
     }
-    if (prixPython >= 19800000) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.3";
+    if (prixRuby >= 19800000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.65";
     }
-    if (prixPython >= ) {
-        document.getElementById("Python").style.backgroundColor = "red";
-        document.getElementById("Python").style.opacity = "0.1";
+    if (prixRuby >= 26400000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.7";
     }
+    if (prixRuby >= 33000000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.75";
+    }
+    if (prixRuby >= 39600000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.8";
+    }
+    if (prixRuby >= 46200000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.85";
+    }
+    if (prixRuby >= 26400000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.9";
+    }
+    if (prixRuby >= 52800000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "0.95";
+    }
+    if (prixRuby >= 59400000) {
+        document.getElementById("Ruby").style.backgroundColor = "#EB371F";
+        document.getElementById("Ruby").style.opacity = "1";
+    }
+   
     //modification  opacité bouton Swift
-    if ( prixSwift) {
-        document.getElementById("Swift").style.backgroundColor = "red";
+    if ( prixSwift >= 36000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.55";
+    }
+    if ( prixSwift >= 72000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.6";
+    }
+    if ( prixSwift >= 108000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.65";
+    }
+    if ( prixSwift >= 144000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.7";
+    }
+    if ( prixSwift >= 180000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.75";
+    }
+    if ( prixSwift >= 216000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.80";
+    }
+    if ( prixSwift >= 252000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.85";
+    }
+    if ( prixSwift >= 288000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.9";
+    }
+    if ( prixSwift >= 324000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
+        document.getElementById("Swift").style.opacity = "0.95";
+    }
+    if ( prixSwift >= 360000000 ) {
+        document.getElementById("Swift").style.backgroundColor = "#E6160B";
         document.getElementById("Swift").style.opacity = "1";
     }
  /*   if ( score >= prixSql ) {
@@ -493,7 +554,7 @@ function upgradeSwift() {
     if(score >= prixSwift && timeOver == 0){
     increment = increment + incrementSwift 
     score = score - prixSwift;
-    prixSwift = prixSwift + 500;
+    prixSwift = prixSwift + 36000000;
     return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixSwift.value = "Swift" + " " + prixSwift;
     }
     }    

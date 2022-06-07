@@ -10,7 +10,9 @@
     height: 100vh;
     }
     
-    .div1 { grid-area: 2 / 3 / 3 / 4; }
+    .div1 { grid-area: 2 / 3 / 3 / 4; 
+   
+}
     .div2 { grid-area: 3 / 3 / 4 / 4; }
     .div3 { grid-area: 4 / 3 / 5 / 4; }
     .div4 { grid-area: 5/ 3 / 6 / 4; }
@@ -40,7 +42,16 @@
     display: flex;
     justify-content: center;
     align-items: center;}
-.div21 { grid-area: 8 / 2 / 11 / 3; }
+    .div21 { grid-area: 9 / 2 / 11 / 3; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div22 { grid-area:  8/ 2 / 9/ 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
     
 
 
@@ -56,47 +67,59 @@
     #HTML{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+    
+      
     }
 
     #JavaScript{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+      
     }
 
     #PHP{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #C{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #Java{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #Kotlin{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
     
 
     #Python{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #Ruby{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #Swift{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
     #SQL{
@@ -145,7 +168,13 @@
         height: 30%;
     }
 
+    #boostCafe{
+        width: 50%;
+        height: 50%;
+        
+    }
+
     #entree{ 
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 70%;
     }
