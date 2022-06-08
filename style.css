@@ -136,31 +136,43 @@
     #FrontEnd {
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #BackEnd{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #FullStack{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #Senior{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #devMan{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #autoClick{
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+
     }
 
     #score{
@@ -177,4 +189,6 @@
     #entree{ 
         width: 80%;
         height: 70%;
+        border-radius: 8px;
+
     }
