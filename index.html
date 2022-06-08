@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="buttonglitch.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <canvas id='canv'></canvas>
@@ -51,22 +54,22 @@
             
         </div>
         <div class="div13"> 
-            <input type="button" value="FrontEnd" onclick="autoFront()" id="FrontEnd" data-inc="1">
+        <button value="FrontEnd" onclick="autoFront()" id="FrontEnd" data-inc="1">Front-end</button>
         </div>
         <div class="div14"> 
-           <input type="button" value="BackEnd" onclick="autoBack()" id="BackEnd" data-inc="10">
+           <button  value="BackEnd" onclick="autoBack()" id="BackEnd" data-inc="10"> BackEnd</button>
         </div>
         <div class="div15"> 
-            <input type="button" value="FullStack" onclick="autoFull()" id="FullStack">
+            <button value="FullStack" onclick="autoFull()" id="FullStack">FullStack</button>
         </div>
         <div class="div16"> 
-           <input type="button" value="Senior" onclick="autoSenior()" id="Senior">
+           <button value="Senior" onclick="autoSenior()" id="Senior">Senior Dev</button>
         </div>
         <div class="div17"> 
-           <input type="button" value="devMan" onclick="autoDev()" id="devMan">
+           <button value="devMan" onclick="autoDev()" id="devMan">Dev Manager </button>
         </div>
         <div class="div18"> 
-            
+            <main class="itemBox">
                 <button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover">
                    
                 </button>
@@ -85,7 +88,7 @@
                     <button id="iconRuby" style="background: url('png/java.png'); background-size: cover;"></button>
         </div>
 
-
+    </main>
 
         <div class="div19"> 
             <div class="popup" > Achievement <br>
@@ -94,14 +97,14 @@
         <div class="div20">
              <a type="number" id="score"></a>
         </div>
-        <div class="23">
+        <div class="clickValeur">
             <a type="number" id="clickVal"></a>
         </div>
         <div class="div22">
-            <input type="button" value="boostCafe" id="boostCafe" onclick="boostCafe()">
+            <button value="boostCafe" id="boostCafe" onclick="boostCafe()">BOOST</button>
         </div>
         <div class="div21">
-            <button value="Entree" id="entree" style="background: url('png/enter.png') ; size: 4em; background-size: cover; ;border: white;" onclick="incrementScore()"></button>
+            <button value="Entree" id="entree" style="background: url('png/enter.png') ; size: 4em; background-size: cover; ;border: white; filter: invert(80%) sepia(30%) saturate(5984%) hue-rotate(82deg) brightness(100%) contrast(122%);; " onclick="incrementScore()"></button>
         </div>
  
     </div>

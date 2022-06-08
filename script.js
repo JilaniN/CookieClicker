@@ -18,8 +18,8 @@ let score = 0;
 
 // Couleur des boutons d'incrémentation
 
-/*document.getElementById("HTML").style.backgroundColor = "#EBBF00";
-document.getElementById("HTML").style.opacity = "0.5";
+/*document.getElementById("HTML").style.backgroundColor = "grey";
+document.getElementById("HTML").style.opacity = "0.1";
       
 document.getElementById("JavaScript").style.backgroundColor = "grey"
 document.getElementById("JavaScript").style.opacity = "0.1";
@@ -101,45 +101,45 @@ function incrementScore()
   }
     //modification opacité bouton html
     if (score >= prixHtml){
-        document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+        document.getElementById("HTML").style.backgroundColor = "#0bda51";
         document.getElementById("HTML").style.opacity = "1";
     } 
   
  //modification  opacité bouton javascript
     if (  score >= prixJs ){
-        document.getElementById("JavaScript").style.backgroundColor = "#F4C100"
+        document.getElementById("JavaScript").style.backgroundColor = "#0bda51"
         document.getElementById("JavaScript").style.opacity = "1";
     }
     
     //modification  opacité bouton PHP
     if ( score>=prixPhp ){
-        document.getElementById("PHP").style.backgroundColor = "#F0A40C";
+        document.getElementById("PHP").style.backgroundColor = "#0bda51";
         document.getElementById("PHP").style.opacity = "1";
     }
     //modification  opacité bouton c
     if ( score>=prixC ){
-        document.getElementById("C").style.backgroundColor = "#F0980C";
+        document.getElementById("C").style.backgroundColor = "#0bda51";
         document.getElementById("C").style.opacity = "1";
     }
     //modification  opacité bouton java
     if ( score >= prixJava ) {
-        document.getElementById("Java").style.backgroundColor = "#D96900";
+        document.getElementById("Java").style.backgroundColor = "#009000";
         document.getElementById("Java").style.opacity = "1"
     }
     //modification  opacité bouton Kotlin
     if ( score>=prixKotlin ){
-        document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
+        document.getElementById("Kotlin").style.backgroundColor = "#009000";
         document.getElementById("Kotlin").style.opacity = "1";
     }
     //modification  opacité bouton Python
     if ( score>=prixPython ) {
-        document.getElementById("Python").style.backgroundColor = "#F0490C";
+        document.getElementById("Python").style.backgroundColor = "#009000";
         document.getElementById("Python").style.opacity = "1";
     }
    
     //modification  opacité bouton Ruby
     if (score>=prixRuby  ) {
-        document.getElementById("Ruby").style.backgroundColor ="#EB371F"
+        document.getElementById("Ruby").style.backgroundColor ="#009000"
         document.getElementById("Ruby").style.opacity = "1"
     }
 
@@ -184,7 +184,7 @@ function incrementer(prixToCalculate, langage, couleur, augmentation, incrementL
 }}
 
 function upgradeHtml() {
-    incrementer(prixHtml, "HTML", "#EBBF00", 50, incrementHtml ); 
+    incrementer(prixHtml, "HTML", "#7fff00", 50, incrementHtml ); 
     prixJHtml=prixToCalculate;
     }
 
