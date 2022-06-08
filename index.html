@@ -12,6 +12,7 @@
 
 </head>
 <body>
+    <canvas id='canv'></canvas>
     <div class="parent">
         <div class="div1">
             <button type="button" value="HTML/CSS" id="HTML" onclick="upgradeHtml()"> HTML/CSS </button>
@@ -41,7 +42,7 @@
             <input type="button" value="Swift" id="Swift" onclick="upgradeSwift()">
              </div>-->
         <div class="div10"> 
-            <input type="button" value="Item" id="item" onclick="upgradeSql()">
+            <p class="multi" style="text-align: center;" >Multiplicateurs</p>
         </div>
         <div class="div11">
             <h1 id="title">Code Clicker</h1>
@@ -66,21 +67,23 @@
         </div>
         <div class="div18"> 
             
-                <button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover"></button>
+                <button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover">
+                   
+                </button>
                 <button id="iconJS" style="background: url('png/js.png'); background-size: cover"></button>
                 <button id="iconPHP" style="background: url('png/php.png'); background-size: cover"></button>
             
         </div>
-     <div class="barIcon2">
-                <button id="iconC"  style="background: url('png/c-.png'); background-size: cover"></button>
-                <button id="iconJava" style="background: url('png/java.png'); background-size: cover;"></button>
-                <button id="iconKotlin" style="background: url('png/programming-language.png'); background-size: cover;"></button>
-            
-     </div>
-     <div class="baricon3">
-                <button id="iconPython" style="background: url('png/python.png'); background-size: cover;"></button>
-                <button id="iconRuby" style="background: url('png/java.png'); background-size: cover;"></button>
-     </div>
+        <div class="barIcon2">
+                    <button id="iconC"  style="background: url('png/c-.png'); background-size: cover"></button>
+                    <button id="iconJava" style="background: url('png/java.png'); background-size: cover;"></button>
+                    <button id="iconKotlin" style="background: url('png/programming-language.png'); background-size: cover;"></button>
+                
+        </div>
+        <div class="baricon3">
+                    <button id="iconPython" style="background: url('png/python.png'); background-size: cover;"></button>
+                    <button id="iconRuby" style="background: url('png/java.png'); background-size: cover;"></button>
+        </div>
 
 
 
@@ -98,11 +101,15 @@
             <input type="button" value="boostCafe" id="boostCafe" onclick="boostCafe()">
         </div>
         <div class="div21">
-            <button value="Entree" id="entree" style="background: url('png/enter.png') ; background-size: cover; ;border: white;" onclick="incrementScore()"></button>
+            <button value="Entree" id="entree" style="background: url('png/enter.png') ; size: 4em; background-size: cover; ;border: white;" onclick="incrementScore()"></button>
         </div>
  
     </div>
+   
+            
+  
         <script src="script.js"></script>
+        <script src="scriptlow.js"></script>
      
 </body>
 </html>

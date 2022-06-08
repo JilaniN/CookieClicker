@@ -1,5 +1,4 @@
 
-
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,8 +7,20 @@
     grid-row-gap: 0px;
     width: 100vw;
     height: 100vh;
+    position: relative;
+    z-index: 1;
     }
     
+    /*.body {
+        margin: 0;
+        background-color: #000;
+      } 
+    #canv {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }*/
+
     .div1 { grid-area: 2 / 3 / 3 / 4; 
         display: flex;
         justify-content: center;
@@ -126,75 +137,182 @@
             cursor: pointer;
             outline: none;
             color: rgb(20, 1, 1);
-            background-color: #d1d423;
+            background-color: #EBBF00;
             border: none;
             border-radius: 15px;
             box-shadow: 0 9px #999;
-    
-      
     }
 
-#HTML:hover {background-color: #d4d124}
+    #HTML:hover {background-color: #EBBF00}
 
-#HTML:active {
-  background-color: #b2dd18;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px)}
+    #HTML:active {
+    background-color: #EBBF00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)}
 
     #JavaScript{
         width: 75%;
         height: 75%;
         border-radius: 8px;
-      
+        cursor: pointer;
+            outline: none;
+            color: rgb(20, 1, 1);
+            background-color: #F4C100;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
     }
+
+    #JavaScript:hover {background-color: #F4C100}
+
+    #JavaScript:active {
+  background-color: #F4C100;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px)
+    }
+      
+    
 
     #PHP{
         width: 75%;
         height: 75%;
         border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #F0A40C;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+    #PHP:hover {background-color: #F0A40C}
+
+    #PHP:active {
+    background-color: #F0A40C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
     }
+    
 
     #C{
         width: 75%;
         height: 75%;
         border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #F0980C;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+    #C:hover {background-color: #F0980C}
+
+    #C:active {
+    background-color: #F0980C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
     }
+    
 
     #Java{
         width: 75%;
         height: 75%;
         border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #D96900;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+    #Java:hover {background-color: #D96900}
+
+    #Java:active {
+    background-color: #D96900;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
     }
+    
 
     #Kotlin{
         width: 75%;
         height: 75%;
         border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #F5630F;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+    #Kotlin:hover {background-color: #F5630F}
+
+    #Kotlin:active {
+    background-color: #F5630F;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
     }
+    
     
 
     #Python{
         width: 75%;
         height: 75%;
         border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #F0490C;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+    #Kotlin:hover {background-color: #F0490C}
+
+    #Kotlin:active {
+    background-color: #F0490C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
     }
+    
 
     #Ruby{
         width: 75%;
         height: 75%;
         border-radius: 8px;
-    }
+        cursor: pointer;
+        outline: none;
+        color: rgb(20, 1, 1);
+        background-color: #EB371F;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
 
-    #Swift{
+    #Ruby:hover {background-color: #EB371F}
+
+    #Ruby:active {
+    background-color: #EB371F;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+    }
+    
+
+    /*#Swift{
         width:75%;
         height:75%;
         border-radius: 8px;
-    }
+    }*/
 
-    #SQL{
-        width:75%;
-        height:75%;
-    }
+
 
 
     #Entree{
@@ -258,8 +376,8 @@
     }
 
     #entree{ 
-        width: 80%;
-        height: 70%;
+      width: 15em;
+      height: 15em;
         border-radius: 8px;
 
     }
@@ -268,7 +386,12 @@
         width: 3.5em;
         height: 3.5em;
         margin: 0.5em;
+        border-radius: 12px;
     }
+        
+
+
+    
 
     #iconJS{
         width: 3.5em;
@@ -367,19 +490,23 @@
 
 /* Making grid responsive */
 
-@media only screen and (max-width: 600px) {
-    .body {
-        grid-template-areas: 
-        "div11" 
-        "div13"
-        "div14"
-        "div15"
-        "div16"
-        "div17"
-        "div18"
+    @media only screen and (max-width: 600px) {
+        .parent {    
+             
+            display: block;
+            grid-template-columns: 1fr;  
+            grid-template-rows: (10, 1fr); 
+           
 
         
-        
-        ;
+    
+
+       
     }
 }
+
+/** {margin: 0; padding: 0}
+body {background: #000;}
+canvas {display: block;
+z-index: 2;
+opacity: 0.5;}*/

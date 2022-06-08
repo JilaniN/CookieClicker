@@ -18,7 +18,7 @@ let score = 0;
 
 // Couleur des boutons d'incrémentation
 
-document.getElementById("HTML").style.backgroundColor = "#EBBF00";
+/*document.getElementById("HTML").style.backgroundColor = "#EBBF00";
 document.getElementById("HTML").style.opacity = "0.5";
       
 document.getElementById("JavaScript").style.backgroundColor = "grey"
@@ -40,7 +40,7 @@ document.getElementById("Python").style.backgroundColor = "grey";
 document.getElementById("Python").style.opacity = "0.1";
    
 document.getElementById("Ruby").style.backgroundColor ="grey"
-document.getElementById("Ruby").style.opacity = "0.1"
+document.getElementById("Ruby").style.opacity = "0.1"*/
 
 // variables de prix d'incrémentation
 
@@ -64,25 +64,25 @@ let displayPrixHtml = document.getElementById("HTML");
 displayPrixHtml.innerHTML= displayPrixHtml.value + "<br />" + prixHtml;
 
 let displayPrixJs = document.getElementById("JavaScript");
-displayPrixJs.value = displayPrixJs.value + "<br />" + prixJs;
+displayPrixJs.innerHTML = displayPrixJs.value + "<br />" + prixJs;
 
 let displayPrixPhp = document.getElementById("PHP");
-displayPrixPhp.value = displayPrixPhp.value + "<br />" + prixPhp;
+displayPrixPhp.innerHTML = displayPrixPhp.value + "<br />" + prixPhp;
 
 let displayPrixC = document.getElementById("C");
-displayPrixC.value = displayPrixC.value + "<br />" + prixC;
+displayPrixC.innerHTML = displayPrixC.value + "<br />" + prixC;
 
 let displayPrixJava = document.getElementById("Java");
-displayPrixJava.value = displayPrixJava.value + "<br />" + prixJava;
+displayPrixJava.innerHTML = displayPrixJava.value + "<br />" + prixJava;
 
 let displayPrixKotlin = document.getElementById("Kotlin");
-displayPrixKotlin.value = displayPrixKotlin.value + "<br />" + prixKotlin;
+displayPrixKotlin.innerHTML = displayPrixKotlin.value + "<br />" + prixKotlin;
 
 let displayPrixPython = document.getElementById("Python");
-displayPrixPython.value = displayPrixPython.value + "<br />" + prixPython;
+displayPrixPython.innerHTML = displayPrixPython.value + "<br />" + prixPython;
 
 let displayPrixRuby = document.getElementById("Ruby");
-displayPrixRuby.value = displayPrixRuby.value + "<br />" + prixRuby;
+displayPrixRuby.innerHTML = displayPrixRuby.value + "<br />" + prixRuby;
 
 
 // variable de prix de multiplicateurs
@@ -100,7 +100,7 @@ function incrementScore()
         popup.classList.toggle("show");
   }
     //modification opacité bouton html
-    if( score >= prixHtml){
+    if (score >= prixHtml){
         document.getElementById("HTML").style.backgroundColor = "#EBBF00";
         document.getElementById("HTML").style.opacity = "1";
     } 
@@ -173,20 +173,19 @@ function multiHtml() {
 
 // Bouton d'upgrade le clic sur le bouton "enter" passe à +2/+3/etc
 
-let couleur = "#EBBF00";
-let langage = "HTML";
-let augmentation = 50;
-let display = displayPrixHtml.innerHTML = "HTML/CSS" + " " + prixHtml;
-
-function upgradeHtml() {
-    if(score >= prixHtml && timeOver == 0){
-    increment = increment + incrementHtml; 
-    score = score - prixHtml;
-    prixHtml = prixHtml + augmentation;
+function incrementer(prixToCalculate, langage, couleur, augmentation, incrementLangage, refreshPrice) {    
+    if(score >= prixToCalculate && timeOver == 0){
+    increment = increment + incrementLangage; 
+    score = score - prixToCalculate;
+    prixToCalculate = prixToCalculate + augmentation;
     document.getElementById(langage).style.backgroundColor = couleur;
     document.getElementById(langage).style.opacity = "0.5";
-}
-return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, display;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixHtml.innerHTML = "HTML/CSS" + "<br />" + prixToCalculate;
+}}
+
+function upgradeHtml() {
+    incrementer(prixHtml, "HTML", "#EBBF00", 50, incrementHtml ); 
+    prixJHtml=prixToCalculate;
     }
 
 /*function upgradeJs() {
@@ -201,18 +200,22 @@ return elements.displayScore.innerHTML = score, elements.displayIncrement.innerH
     }*/
 
 function upgradeJs() {
-    couleur = "#F4C100", langage = "JavaScript", augmentation = 250, display = displayPrixJs.value = "JavaScript" + " " + prixJs;
-    upgradeHtml();
+    prix = prixJs, couleur = "#F4C100", langage = "JavaScript", augmentation = 250;
+    incrementer (prixJs, "JavaScript", "#F4C100", 250, incrementJava);
+    prixJs=prixToCalculate;
+    //return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixJs.innerHTML = "JavaScript" + "<br />" + prixJs;
 }
 
 function upgradePhp() {
+    prix = prixPhp, couleur = "#F0A40C", langage = "PHP", augmentation = 1300;
+
     if(score >= prixPhp && timeOver == 0){
     increment = increment + incrementPhp; 
     score = score - prixPhp;
     prixPhp = prixPhp + 1300;
     document.getElementById("PHP").style.backgroundColor = "#F0A40C";
     document.getElementById("PHP").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPhp.value = "PHP" + " " + prixPhp;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPhp.innerHTML = "PHP" + "<br />" + prixPhp;
     }
     }    
 
@@ -223,7 +226,7 @@ function upgradeC() {
     prixC = prixC + 7000;
     document.getElementById("C").style.backgroundColor = "#F0980C";
     document.getElementById("C").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixC.value = "C" + " " + prixC;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixC.innerHTML = "C" + "<br />" + prixC;
     }
     }
 
@@ -234,7 +237,7 @@ function upgradeJava() {
     prixJava = prixJava + 40000;
     document.getElementById("Java").style.backgroundColor = "#D96900";
     document.getElementById("Java").style.opacity = "0.5"
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixJava.value = "Java" + " " + prixJava;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixJava.innerHTML = "Java" + "<br />" + prixJava;
     }
     }    
 
@@ -245,7 +248,7 @@ function upgradeKotlin() {
     prixKotlin = prixKotlin + 220000;
     document.getElementById("Kotlin").style.backgroundColor = "#F5630F";
     document.getElementById("Kotlin").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixKotlin.value = "Kotlin" + " " + prixKotlin;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixKotlin.value = "Kotlin" + "<br />" + prixKotlin;
     }
     }
 
@@ -256,7 +259,7 @@ function upgradePython() {
     prixPython = prixPython + 1200000;
     document.getElementById("Python").style.backgroundColor = "#F0490C";
     document.getElementById("Python").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPython.value = "Python" + " " + prixPython;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPython.innerHTML = "Python" + "<br />" + prixPython;
     }
     }    
 
@@ -267,7 +270,7 @@ function upgradeRuby() {
     prixRuby = prixRuby + 660000;
     document.getElementById("Ruby").style.backgroundColor ="#EB371F"
     document.getElementById("Ruby").style.opacity = "0.5"
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixRuby.value = "Ruby" + " " + prixRuby;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixRuby.innerHTML = "Ruby" + "<br />" + prixRuby;
     }
     }    
 
@@ -438,3 +441,6 @@ iconeHtml.onmouseover = function survol()
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+
+
