@@ -14,33 +14,32 @@
 <body>
     <div class="parent">
         <div class="div1">
-            <input type="button" id="HTML" value="HTML/CSS" onclick="upgradeHtml()">  
-            
-        </div>
+            <button type="button" value="HTML/CSS" id="HTML" onclick="upgradeHtml()"> HTML/CSS </button>
+             </div>
         <div class="div2">
-            <input  type="button" id="JavaScript" value="JavaScript" onclick="upgradeJs()">
+            <button type="button" id="JavaScript" value="JavaScript" onclick="upgradeJs()">JavaScript</button>
         </div>
         <div class="div3">
-            <input type="button" id="PHP" value="PHP" onclick="upgradePhp()">
+        <button type="button" id="PHP" value="PHP" onclick="upgradePhp()"> PHP</button>
         </div>
         <div class="div4"> 
-            <input  type="button" id="C" value="C+" onclick="upgradeC()">
+           <button type="button"  id="C" value="C+" onclick="upgradeC()">C++</button>
         </div>
         <div class="div5">
-            <input type="button" value="Java" id="Java" onclick="upgradeJava()">
+           <button type="button" value="Java" id="Java" onclick="upgradeJava()">Java</button>
          </div>
         <div class="div6">
-            <input type="button" value="Kotlin" id="Kotlin" onclick="upgradeKotlin()">
+           <button type="button"  value="Kotlin" id="Kotlin" onclick="upgradeKotlin()">Kotlin</button>
          </div>
         <div class="div7">
-            <input type="button" value="Python" id="Python" onclick="upgradePython()">
+        <button type="button" value="Python" id="Python" onclick="upgradePython()">Python</button>
          </div>
         <div class="div8"> 
-            <input type="button" value="Ruby" id="Ruby" onclick="upgradeRuby()">
+           <button type="button" value="Ruby" id="Ruby" onclick="upgradeRuby()">Ruby</button>
         </div>
-        <div class="div9">
+        <!--<div class="div9">
             <input type="button" value="Swift" id="Swift" onclick="upgradeSwift()">
-             </div>
+             </div>-->
         <div class="div10"> 
             <input type="button" value="Item" id="item" onclick="upgradeSql()">
         </div>
@@ -66,11 +65,29 @@
            <input type="button" value="devMan" onclick="autoDev()" id="devMan">
         </div>
         <div class="div18"> 
-          <input type="button" value="autoClick" id="autoClick" onclick="auto()">
+            
+                <button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover"></button>
+                <button id="iconJS" style="background: url('png/js.png'); background-size: cover"></button>
+                <button id="iconPHP" style="background: url('png/php.png'); background-size: cover"></button>
+            
         </div>
+     <div class="barIcon2">
+                <button id="iconC"  style="background: url('png/c-.png'); background-size: cover"></button>
+                <button id="iconJava" style="background: url('png/java.png'); background-size: cover;"></button>
+                <button id="iconKotlin" style="background: url('png/programming-language.png'); background-size: cover;"></button>
+            
+     </div>
+     <div class="baricon3">
+                <button id="iconPython" style="background: url('png/python.png'); background-size: cover;"></button>
+                <button id="iconRuby" style="background: url('png/java.png'); background-size: cover;"></button>
+     </div>
+
+
+
         <div class="div19"> 
-            <label for="uname" id="messPopUp">Message pop up </label>
-        </div>
+            <div class="popup" > Achievement <br>
+                <span class="popuptext" id="myPopup" value="myPopup">You are now able to do the bare minimum</span>
+              </div>        </div>
         <div class="div20">
              <a type="number" id="score"></a>
         </div>
@@ -81,9 +98,9 @@
             <input type="button" value="boostCafe" id="boostCafe" onclick="boostCafe()">
         </div>
         <div class="div21">
-          <input type="button" value="Entree" id="entree" onclick="incrementScore()">
+            <button value="Entree" id="entree" style="background: url('png/enter.png') ; background-size: cover; ;border: white;" onclick="incrementScore()"></button>
         </div>
-        
+ 
     </div>
         <script src="script.js"></script>
      
