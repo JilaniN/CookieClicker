@@ -23,7 +23,7 @@ let prixPython = 1200000;
 let prixRuby = 6600000;
 
 // variables de prix d'auto-clics
-let prixFront = 10000;
+let prixFront = 1;
 let prixBack = 25000;
 let prixFull = 100000;
 let prixSenior = 250000;
@@ -295,7 +295,7 @@ var incrementAutoDev = 1;
 
 function autoFront() {
     if (intervalAutoFront == 0 && score >= prixFront){
-    score = score + incrementAutoFront;
+    score = score - prixFront;
     intervalAutoFront++;
     const intervalEntree = setInterval(autoFront, 1000);
     return elements.displayScore.innerHTML = score, displayPrixFront.innerHTML = "You hired a Frontend";
@@ -307,7 +307,7 @@ function autoFront() {
 }
 function autoBack() {
  if (intervalAutoBack == 0 && score >= prixBack){
-    score = score + incrementAutoBack;
+    score = score - prixBack;
     intervalAutoBack++;
     const intervalEntree = setInterval(autoBack, 1000);
     return elements.displayScore.innerHTML = score, displayPrixBack.innerHTML = "You hired a Backend";
@@ -319,7 +319,7 @@ function autoBack() {
 }
 function autoFull() {
  if (intervalAutoFull == 0 && score >= prixFull){
-    score = score + incrementAutoFull;
+    score = score - prixFull;
     intervalAutoFull++;
     const intervalEntree = setInterval(autoFull, 1000);
     return elements.displayScore.innerHTML = score, displayPrixFull.innerHTML = "You hired a FullStack";
@@ -331,7 +331,7 @@ function autoFull() {
 }
 function autoSenior() {
     if (intervalAutoSenior == 0 && score >= prixSenior){
-    score = score + incrementAutoSenior;
+    score = score - prixSenior;
     intervalAutoSenior++;
     const intervalEntree = setInterval(autoSenior, 1000);
     return elements.displayScore.innerHTML = score, displayPrixSenior.innerHTML = "You hired a Senior Dev";
@@ -343,7 +343,7 @@ function autoSenior() {
 }
 function autoDev() {
     if (intervalAutoDev == 0 && score >= prixDev){
-        score = score + incrementAutoDev;
+        score = score - prixDev;
         intervalAutoDev++;
         const intervalEntree = setInterval(autoDev, 1000);
         return elements.displayScore.innerHTML = score, displayPrixDev.innerHTML = "You hired a Dev Manager";
