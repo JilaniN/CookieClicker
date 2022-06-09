@@ -32,12 +32,6 @@ let prixDev = 500000;
 elements.displayScore.innerHTML = score;
 elements.displayIncrement.innerHTML =  increment;
 
-//pop up de dante
-/*let htmlcli = document.getElementById("HTML").addEventListener('click', true)
-if ( htmlcli =  true && prixHtml ==5 ){
-    
-}*/
-
 // On affiche les prix à l'emplacement correct
 let displayPrixHtml = document.getElementById("HTML");
 displayPrixHtml.innerHTML= displayPrixHtml.value+ " " + prixHtml;
