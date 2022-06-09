@@ -76,32 +76,43 @@
 }
 .div12 { grid-area: 3 / 2 / 11 / 3; 
 }
-.div13 { grid-area: 1 / 1 / 2 / 2; 
+
+.espace{
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: greenyellow;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.div13 { grid-area: 2 / 1 / 3 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div14 { grid-area: 2 / 1 / 3 / 2; 
+.div14 { grid-area: 3 / 1 / 4 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div15 { grid-area: 3 / 1 / 4 / 2; 
+.div15 { grid-area: 4 / 1 / 5 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div16 { grid-area: 4 / 1 / 5 / 2; 
+.div16 { grid-area: 5 / 1 / 6 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div17 { grid-area: 5 / 1 / 6 / 2; 
+.div17 { grid-area: 6 / 1 / 7 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div18 { grid-area: 6 / 1 / 7 / 2; 
+.div18 { grid-area: 7 / 1 / 8 / 2; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +148,7 @@ align-items: center;
     }
 
 .barIcon2{
-    grid-area: 7/1/8/2;
+    grid-area: 8/1/9/2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +156,7 @@ align-items: center;
    }
     
 .baricon3{
-    grid-area:  8/1/9/2;
+    grid-area:  9/1/10/2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,16 +274,80 @@ align-items: center;
 
 /* Making grid responsive */
 
+    /* Making the grid responsive. */
     @media only screen and (max-width: 600px) {
         .parent {    
              
-            display: block;
+            display: grid;
             grid-template-columns: 1fr 1fr;  
             grid-template-rows: repeat(15, 1fr); 
     }
-    .div11{
-        grid-area: 1/1/2/2;
+    .body{
+        width: 100vw;
+        height: 100vh;
     }
+    #canv{
+        width: 100vw;
+        height: 100vh;
+    }
+    .div11{
+        grid-area: 1/1/2/3;
+        width: 100vw;
+    }
+    .div1{
+        grid-area: 2/1/3/2;
+
+        
+    }
+    .div2{
+        grid-area: 2/2/3/3;
+    }
+    .div3{
+        grid-area: 3/1/4/2;
+    }
+    .div4{
+        grid-area: 3/2/4/3;
+    }
+    .div5{
+        grid-area: 4/1/5/2;
+    }
+    .div6{}
+.div13{
+    grid-area: 10/1/11/2;
+}
+.div14{
+    grid-area: 10/2/11/3;
+}
+.div18{
+    grid-area: 7/1/8/3;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+.barIcon2{
+    grid-area: 8/1/10/3;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.baricon3{
+    grid-area: 9/1/10/3;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.div21{
+    grid-area: 12/1/13/3;
+}
+
+    #iconHTml{
+        width: 1em;
+        height: 1em;
+}
+.div22{
+    grid-area: 13/1/14/3;
+}
 }
 
 /* central frame */
