@@ -11,32 +11,6 @@ let entree = document.getElementById("entree");
 // Affiche le bouton Score
 let score = 0;
 
-// Couleur des boutons d'incrémentation
-
-/*document.getElementById("HTML").style.backgroundColor = "grey";
-document.getElementById("HTML").style.opacity = "0.1";
-      
-document.getElementById("JavaScript").style.backgroundColor = "grey"
-document.getElementById("JavaScript").style.opacity = "0.1";
-   
-document.getElementById("PHP").style.backgroundColor = "grey";
-document.getElementById("PHP").style.opacity = "0.1";
-   
-document.getElementById("C").style.backgroundColor =  "grey";
-document.getElementById("C").style.opacity = "0.1"
-   
-document.getElementById("Java").style.backgroundColor = "grey";
-document.getElementById("Java").style.opacity = "0.1";
-
-document.getElementById("Kotlin").style.backgroundColor = "grey";
-document.getElementById("Kotlin").style.opacity = "0.1";
-   
-document.getElementById("Python").style.backgroundColor = "grey";
-document.getElementById("Python").style.opacity = "0.1";
-   
-document.getElementById("Ruby").style.backgroundColor ="grey"
-document.getElementById("Ruby").style.opacity = "0.1"   */
-
 // variables de prix d'incrémentation
 let increment = 1;
 let prixHtml = 5;
@@ -47,33 +21,62 @@ let prixJava = 40000;
 let prixKotlin = 220000;
 let prixPython = 1200000;
 let prixRuby = 6600000;
+
+// variables de prix d'auto-clics
+let prixFront = 10000;
+let prixBack = 25000;
+let prixFull = 100000;
+let prixSenior = 250000;
+let prixDev = 500000;
+
 elements.displayScore.innerHTML = score;
-elements.displayIncrement.innerHTML = increment;
+elements.displayIncrement.innerHTML =  increment;
+
+//pop up de dante
+/*let htmlcli = document.getElementById("HTML").addEventListener('click', true)
+if ( htmlcli =  true && prixHtml ==5 ){
+    
+}*/
 
 // On affiche les prix à l'emplacement correct
 let displayPrixHtml = document.getElementById("HTML");
-displayPrixHtml.innerHTML= displayPrixHtml.value + "<br />" + prixHtml;
+displayPrixHtml.innerHTML= displayPrixHtml.value+ " " + prixHtml;
 
 let displayPrixJs = document.getElementById("JavaScript");
-displayPrixJs.innerHTML = displayPrixJs.value + "<br />" + prixJs;
+displayPrixJs.innerHTML = displayPrixJs.value + " " + prixJs;
 
 let displayPrixPhp = document.getElementById("PHP");
-displayPrixPhp.innerHTML = displayPrixPhp.value + "<br />" + prixPhp;
+displayPrixPhp.innerHTML = displayPrixPhp.value + " " + prixPhp;
 
 let displayPrixC = document.getElementById("C");
-displayPrixC.innerHTML = displayPrixC.value + "<br />" + prixC;
+displayPrixC.innerHTML = displayPrixC.value + " " + prixC;
 
 let displayPrixJava = document.getElementById("Java");
-displayPrixJava.innerHTML = displayPrixJava.value + "<br />" + prixJava;
+displayPrixJava.innerHTML = displayPrixJava.value + " " + prixJava;
 
 let displayPrixKotlin = document.getElementById("Kotlin");
-displayPrixKotlin.innerHTML = displayPrixKotlin.value + "<br />" + prixKotlin;
+displayPrixKotlin.innerHTML = displayPrixKotlin.value + " " + prixKotlin;
 
 let displayPrixPython = document.getElementById("Python");
-displayPrixPython.innerHTML = displayPrixPython.value + "<br />" + prixPython;
+displayPrixPython.innerHTML = displayPrixPython.value + " " + prixPython;
 
 let displayPrixRuby = document.getElementById("Ruby");
-displayPrixRuby.innerHTML = displayPrixRuby.value + "<br />" + prixRuby;
+displayPrixRuby.innerHTML = displayPrixRuby.value + " " + prixRuby;
+
+let displayPrixFront = document.getElementById("FrontEnd");
+displayPrixFront.innerHTML = displayPrixFront.value + " " + prixFront;
+
+let displayPrixBack = document.getElementById("BackEnd");
+displayPrixBack.innerHTML = displayPrixBack.value + " " + prixBack;
+
+let displayPrixFull = document.getElementById("FullStack");
+displayPrixFull.innerHTML = displayPrixFull.value + " " + prixFull;
+
+let displayPrixSenior = document.getElementById("Senior");
+displayPrixSenior.innerHTML = displayPrixSenior.value + " " + prixSenior;
+
+let displayPrixDev = document.getElementById("devMan");
+displayPrixDev.innerHTML = displayPrixDev.value + " " + prixDev;
 
 // Fonction qui incrémente le score quand tu cliques + affichage du score.
 function incrementScore()
@@ -130,7 +133,6 @@ function incrementScore()
 }
 
 // Variables incrémentation pour les items
-
 let incrementHtml = 1;
 let incrementJs = 1;
 let incrementPhp = 1;
@@ -141,7 +143,6 @@ let incrementRuby = 1;
 let incrementKotlin = 1;
 
 // Bouton d'upgrade le clic sur le bouton "enter" passe à +2/+3/etc
-
 let prix;
 let augmentation;
 let couleur;
@@ -153,58 +154,66 @@ function incrementer() {
     increment = increment + incrementLangage; 
     score = score - prix;
     prix = prix + augmentation;
-    document.getElementById(langage).style.backgroundColor = couleur;
-    document.getElementById(langage).style.opacity = "0.5";
-}
-}
+    //document.getElementById(langage).style.backgroundColor = couleur;
+    //document.getElementById(langage).style.opacity = "0.5";
+    }}
+
+let DanteSays = document.querySelector('.dante');
+var DanteSayItOneTimeHtml = 0;
 
 function upgradeHtml() {
+    if (score >= 5 && DanteSayItOneTimeHtml === 0){
+    danteSay.classList.toggle("show");
+    DanteSayItOneTimeHtml++;
+    setTimeout(function() {
+        danteSay.classList.toggle("show");
+      }, 5000);}
     prix = prixHtml, couleur = "#F0A40C", langage = "HTML", augmentation = 50, incrementLangage = incrementHtml;
     incrementer(); 
     prixHtml = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixHtml.innerHTML = "HTML/CSS" + "<br />" + prixHtml;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixHtml.innerHTML = "HTML/CSS " + prixHtml;
     }
 
 function upgradeJs() {
     prix = prixJs, couleur = "#F4C100", langage = "JavaScript", augmentation = 250, incrementLangage = incrementJs;
     incrementer();
     prixJs = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixJs.innerHTML = "JavaScript" + "<br />" + prixJs;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixJs.innerHTML = "JavaScript" + " " + prixJs;
 }
 
 function upgradePhp() {
     prix = prixPhp, couleur = "#F0A40C", langage = "PHP", augmentation = 1300, incrementLangage = incrementPhp;
     incrementer();
     prixPhp = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPhp.innerHTML = "PHP" + "<br />" + prixPhp;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixPhp.innerHTML = "PHP" + " " + prixPhp;
     }
 
 function upgradeC() {
     prix = prixC, couleur = "#F0980C", langage = "C", augmentation = 7000, incrementLangage = incrementC;
     incrementer();
     prixC = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixC.innerHTML = "C" + "<br />" + prixC;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixC.innerHTML = "C" + " " + prixC;
     }
 
 function upgradeJava() {
     prix = prixJava, couleur = "#D96900", langage = "Java", augmentation = 40000, incrementLangage = incrementJava;
     incrementer();
     prixJava = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixJava.innerHTML = "Java" + "<br />" + prixJava;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixJava.innerHTML = "Java" + " " + prixJava;
     } 
 
 function upgradeKotlin() {
     prix = prixKotlin, couleur = "#F5630F", langage = "Kotlin", augmentation = 220000, incrementLangage = incrementKotlin;
     incrementer();
     prixKotlin = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixKotlin.value = "Kotlin" + "<br />" + prixKotlin;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixKotlin.value = "Kotlin" + " " + prixKotlin;
     }
 
 function upgradePython() {
     prix = prixPython, couleur = "#F0490C", langage = "Python", augmentation = 1200000, incrementLangage = incrementPython;
     incrementer();
     prixPython = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixPython.innerHTML = "Python" + "<br />" + prixPython;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixPython.innerHTML = "Python" + " " + prixPython;
     }
      
 
@@ -212,7 +221,7 @@ function upgradeRuby() {
     prix = prixRuby, couleur = "#EB371F", langage = "Ruby", augmentation = 660000, incrementLangage = incrementRuby;
     incrementer();
     prixRuby = prix;
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixRuby.innerHTML = "Ruby" + "<br />" + prixRuby;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixRuby.innerHTML = "Ruby" + " " + prixRuby;
     }  
 
     /*TEST ECHOUE, LE PRIXTOCALCULATE SE MELANGE AVEC TOUS LES LANGAGES
@@ -223,48 +232,12 @@ function upgradeRuby() {
     prixToCalculate = prixToCalculate + augmentation;
     document.getElementById(langage).style.backgroundColor = couleur;
     document.getElementById(langage).style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixHtml.innerHTML = "HTML/CSS" + "<br />" + prixToCalculate;}
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixHtml.innerHTML = "HTML/CSS" + " " + prixToCalculate;}
 }*/
 
-// Les items / Les multiplicateurs
-
-let prixMultiHtml = 1;
-let prixMultiJs = 1;
-let prixMultiPHP = 1;
-
-function multiHtml() {
-    if(score >= prixMultiHtml){
-    incrementAutoFront = incrementAutoFront * 2; 
-    score = score - prixMultiHtml;
-    prixMultiHtml = prixMultiHtml + 50;
-    document.getElementById("iconHTml").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score;
-    }}
-
-function multiPHP() {
-    if(score >= prixMultiPHP){
-    incrementAutoBack = incrementAutoBack * 2; 
-    score = score - prixMultiPHP;
-    prixMultiPHP = prixMultiPHP + 50;
-    document.getElementById("iconPHP").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score;
-    }}
-
-function multiJs() {
-    if(score >= prixMultiJs){
-    alert("Félicitations ! Vous êtes en burn out !")
-    score = score - prixMultiJs;
-    prixMultiJs = prixMultiJs + 50;
-    document.getElementById("iconJs").style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score;
-    }}
-    
 // variables de durée pour touche café
-var refreshTime = 5;
+var refreshTime = 60;
 var timeOver = 0;
-
-// Autoclick 
-var autoClick; 
 
 // Le temps de refresh pour le bouton Café
 function timeRefreshCafe(){
@@ -279,8 +252,7 @@ const intervalRefresh = setInterval(timeRefreshCafe, 1000);
 // Fonction qui contrôle le bouton café
 function boostCafe() {
     if (refreshTime == 0){
-    timeOver = 10;
-
+    timeOver = 30;
     function timeActiveCafe(){
         if (timeOver > 0){
         timeOver--;
@@ -290,16 +262,14 @@ function boostCafe() {
         increment = increment / 2;
         refreshTime = 5;
         timeRefreshCafe();
-        return elements.displayIncrement.innerHTML = increment
+        return elements.displayIncrement.innerHTML =  increment
         }
     console.log(timeOver);
     }
-
     const intervalOver = setInterval(timeActiveCafe, 1000);
-
     if(refreshTime == 0 && timeOver > 0){
     increment = increment * 2; 
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment;
+    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment;
     }
     }
     else{
@@ -307,25 +277,7 @@ function boostCafe() {
     }
 }
 
-//Fonction AUTOCLIC
-
-// var intervalAuto = 0;
-// var incrementAuto = 1;
-
- /*function auto() {
-     if (intervalAuto == 0){
-     score = score + incrementAuto;
-     intervalAuto++;
-     const intervalEntree = setInterval(auto, 1000);
-     return elements.displayScore.innerHTML = score
- }
-     else if (intervalAuto == 1){
-         score = score + incrementAuto;
-         return elements.displayScore.innerHTML = score
-        }
- }*/
-
- //Fonction multiplicateurs d'auto-clics (Colonnes de gauche)
+ //Fonctions auto-clics (Colonnes de gauche)
 var intervalAutoFront = 0;
 var incrementAutoFront = 1;
 
@@ -342,82 +294,225 @@ var intervalAutoDev = 0;
 var incrementAutoDev = 1;
 
 function autoFront() {
-    if (intervalAutoFront == 0){
+    if (intervalAutoFront == 0 && score >= prixFront){
     score = score + incrementAutoFront;
     intervalAutoFront++;
     const intervalEntree = setInterval(autoFront, 1000);
-    return elements.displayScore.innerHTML = score
+    return elements.displayScore.innerHTML = score, displayPrixFront.innerHTML = "You hired a Frontend";
 }
     else if (intervalAutoFront == 1){
         score = score + incrementAutoFront;
-        return elements.displayScore.innerHTML = score
+        return elements.displayScore.innerHTML = score, displayPrixFront.innerHTML = "You hired a Frontend";
         }
 }
 function autoBack() {
- if (intervalAutoBack == 0){
+ if (intervalAutoBack == 0 && score >= prixBack){
     score = score + incrementAutoBack;
     intervalAutoBack++;
     const intervalEntree = setInterval(autoBack, 1000);
-    return elements.displayScore.innerHTML = score
+    return elements.displayScore.innerHTML = score, displayPrixBack.innerHTML = "You hired a Backend";
 }
-    else if (intervalAutoBack == 1){
+    else if (intervalAutoBack == 1 && score >= prixBack){
         score = score + incrementAutoBack;
-        return elements.displayScore.innerHTML = score
+        return elements.displayScore.innerHTML = score, displayPrixBack.innerHTML = "You hired a Backend";
         }
 }
 function autoFull() {
- if (intervalAutoFull == 0){
+ if (intervalAutoFull == 0 && score >= prixFull){
     score = score + incrementAutoFull;
     intervalAutoFull++;
     const intervalEntree = setInterval(autoFull, 1000);
-    return elements.displayScore.innerHTML = score
+    return elements.displayScore.innerHTML = score, displayPrixFull.innerHTML = "You hired a FullStack";
 }
-    else if (intervalAutoFull == 1){
+    else if (intervalAutoFull == 1 && score >= prixFull){
         score = score + incrementAutoFull;
-        return elements.displayScore.innerHTML = score
+        return elements.displayScore.innerHTML = score, displayPrixFull.innerHTML = "You hired a FullStack";
         }
 }
 function autoSenior() {
-    if (intervalAutoSenior == 0){
+    if (intervalAutoSenior == 0 && score >= prixSenior){
     score = score + incrementAutoSenior;
     intervalAutoSenior++;
     const intervalEntree = setInterval(autoSenior, 1000);
-    return elements.displayScore.innerHTML = score
+    return elements.displayScore.innerHTML = score, displayPrixSenior.innerHTML = "You hired a Senior Dev";
 }
-    else if (intervalAutoSenior == 1){
+    else if (intervalAutoSenior == 1 && score >= prixSenior){
         score = score + incrementAutoSenior;
-        return elements.displayScore.innerHTML = score
+        return elements.displayScore.innerHTML = score, displayPrixSenior.innerHTML = "You hired a Senior Dev";
         }
 }
 function autoDev() {
-    if (increment>=1){
-        incrementAuto++
+    if (intervalAutoDev == 0 && score >= prixDev){
+        score = score + incrementAutoDev;
+        intervalAutoDev++;
+        const intervalEntree = setInterval(autoDev, 1000);
+        return elements.displayScore.innerHTML = score, displayPrixDev.innerHTML = "You hired a Dev Manager";
+    }
+        else if (intervalAutoDev == 1 && score >= prixDev){
+            score = score + incrementAutoDev;
+            return elements.displayScore.innerHTML = score, displayPrixDev.innerHTML = "You hired a Dev Manager";
+            }
+    }
+
+    // Les items / Les multiplicateurs
+let prixMultiHtml = 1;
+let prixMultiJs = 1;
+let prixMultiPHP = 1;
+let prixMultiC = 1;
+let prixMultiJava = 1;
+let prixMultiKotlin = 1;
+let prixMultiPython = 1;
+let prixMultiRuby = 1;
+
+/*function multipliers(prixMulti, incrementAuto, augmentation, langage) {
+    if(score >= prixMulti){
+    incrementAuto = incrementAuto * 2; 
+    score = score - prixMulti;
+    prixMulti = prixMulti + augmentation;
+    document.getElementById(langage).style.opacity = "0.5";
+    return elements.displayScore.innerHTML = score;
+    }}*/
+
+function multiHtml() {
+    if(score >= prixMultiHtml){
+    incrementAutoFront = incrementAutoFront * 2; 
+    score = score - prixMultiHtml;
+    prixMultiHtml = prixMultiHtml + 50;
+    document.getElementById("iconHTml").style.opacity = "0.5";
+    return elements.displayScore.innerHTML = score;
     }
 }
+
+function multiJs() {
+    if(score >= prixMultiJs){
+        alert("Félicitations ! Vous êtes en burn out !")
+        score = score - prixMultiJs;
+        prixMultiJs = prixMultiJs + 50;
+        document.getElementById("iconJs").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }
+}
+
+function multiPHP() {
+    //multipliers(prixMultiPHP, incrementAutoBack, 50, "iconPHP")
+    if(score >= prixMultiPHP){
+    incrementAutoBack = incrementAutoBack * 2; 
+    score = score - prixMultiPHP;
+    prixMultiPHP = prixMultiPHP + 50;
+    document.getElementById("iconPHP").style.opacity = "0.5";
+    return elements.displayScore.innerHTML = score;
+    }}
+
+function multiC() {
+    if(score >= prixMultiC){
+        incrementC = incrementC * 2; 
+        score = score - prixMultiC;
+        prixMultiC = prixMultiC + 50;
+        document.getElementById("iconC").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }}
+
+function multiKotlin() {
+    if(score >= prixMultiKotlin){
+        incrementAutoSenior = incrementAutoSenior * 2; 
+        score = score - prixMultiKotlin;
+        prixMultiKotlin = prixMultiKotlin + 50;
+        document.getElementById("iconKotlin").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }}
+
+function multiJava() {
+    if(score >= prixMultiJava){
+        incrementAutoFull = incrementAutoFull * 2; 
+        score = score - prixMultiHtml;
+        prixMultiHtml = prixMultiHtml + 50;
+        document.getElementById("iconJava").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }}
+
+function multiPython() {
+    if(score >= prixMultiPython){
+        incrementAutoBack = incrementAutoBack * 2; 
+        score = score - prixMultiPython;
+        prixMultiPython = prixMultiPython + 50;
+        document.getElementById("iconPython").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }}
+
+function multiRuby() {
+    if(score >= prixMultiRuby){
+        incrementAutoDev = incrementAutoDev * 2; 
+        score = score - prixMultiRuby;
+        prixMultiRuby = prixMultiRuby + 50;
+        document.getElementById("iconRuby").style.opacity = "0.5";
+        return elements.displayScore.innerHTML = score;
+        }}
+    
 //Popups au survol
 let iconeHtml = document.querySelector('#iconHTml');
 let iconeJs = document.querySelector('#iconJS');
 let iconePhp = document.querySelector('#iconPHP');
+let iconeC = document.querySelector('#iconC');
+let iconeJava = document.querySelector('#iconJava');
+let iconeKotlin = document.querySelector('#iconKotlin');
+let iconePython = document.querySelector('#iconPython');
+let iconeRuby = document.querySelector('#iconRuby');
 
 iconeHtml.addEventListener("mouseover", function() {
     tutoHtml.classList.toggle("show");
     setTimeout(function() {
       tutoHtml.classList.toggle("show");
-    }, 2000);
+    }, 3500);
   }, false);
 
 iconeJs.addEventListener("mouseover", function() {
     tutoJs.classList.toggle("show");
     setTimeout(function() {
       tutoJs.classList.toggle("show");
-    }, 2000);
+    }, 3500);
   }, false);
 
-iconePhp.addEventListener("mouseover", function() {
+  iconePhp.addEventListener("mouseover", function() {
     tutoPHP.classList.toggle("show");
     setTimeout(function() {
       tutoPHP.classList.toggle("show");
-    }, 2000);
+    }, 3500);
+  }, false);
+
+  iconeC.addEventListener("mouseover", function() {
+    tutoC.classList.toggle("show");
+    setTimeout(function() {
+      tutoC.classList.toggle("show");
+    }, 3500);
+  }, false);
+
+
+iconeJava.addEventListener("mouseover", function() {
+    tutoJava.classList.toggle("show");
+    setTimeout(function() {
+      tutoJava.classList.toggle("show");
+    }, 3500);
+  }, false);
+
+  iconeKotlin.addEventListener("mouseover", function() {
+    tutoKotlin.classList.toggle("show");
+    setTimeout(function() {
+      tutoKotlin.classList.toggle("show");
+    }, 3500);
+  }, false);
+
+  iconePython.addEventListener("mouseover", function() {
+    tutoPython.classList.toggle("show");
+    setTimeout(function() {
+      tutoPython.classList.toggle("show");
+    }, 3500);
+  }, false);
+
+  iconeRuby.addEventListener("mouseover", function() {
+    tutoRuby.classList.toggle("show");
+    setTimeout(function() {
+      tutoRuby.classList.toggle("show");
+    }, 3500);
   }, false);
 
 /*iconeHtml.onmouseover = function survol()

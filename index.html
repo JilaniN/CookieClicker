@@ -18,38 +18,38 @@
     <canvas id='canv'></canvas>
     <div class="parent">
         <div class="div1">
-            <button type="button" value="HTML/CSS" id="HTML" onclick="upgradeHtml()"> HTML/CSS </button>
+            <button type="button" class="query" value="HTML/CSS" id="HTML" onclick="upgradeHtml()"> HTML/CSS </button>
              </div>
         <div class="div2">
-            <button type="button" id="JavaScript" value="JavaScript" onclick="upgradeJs()">JavaScript</button>
+            <button type="button" class="query" id="JavaScript" value="JavaScript" onclick="upgradeJs()">JavaScript</button>
         </div>
         <div class="div3">
-        <button type="button" id="PHP" value="PHP" onclick="upgradePhp()"> PHP</button>
+        <button type="button" class="query" id="PHP" value="PHP" onclick="upgradePhp()"> PHP</button>
         </div>
         <div class="div4"> 
-           <button type="button"  id="C" value="C+" onclick="upgradeC()">C++</button>
+           <button type="button" class="query" id="C" value="C+" onclick="upgradeC()">C++</button>
         </div>
         <div class="div5">
-           <button type="button" value="Java" id="Java" onclick="upgradeJava()">Java</button>
+           <button type="button" class="query" value="Java" id="Java" onclick="upgradeJava()">Java</button>
          </div>
         <div class="div6">
-           <button type="button"  value="Kotlin" id="Kotlin" onclick="upgradeKotlin()">Kotlin</button>
+           <button type="button" class="query" value="Kotlin" id="Kotlin" onclick="upgradeKotlin()">Kotlin</button>
          </div>
         <div class="div7">
-        <button type="button" value="Python" id="Python" onclick="upgradePython()">Python</button>
+        <button type="button" class="query" value="Python" id="Python" onclick="upgradePython()">Python</button>
          </div>
         <div class="div8"> 
-           <button type="button" value="Ruby" id="Ruby" onclick="upgradeRuby()">Ruby</button>
+           <button type="button"  class="query" value="Ruby" id="Ruby" onclick="upgradeRuby()">Ruby</button>
         </div>
         <!--<div class="div9">²
             <input type="button" value="Swift" id="Swift" onclick="upgradeSwift()">
              </div>-->
-        <div class="div10"> 
-            <p class="multi" style="text-align: center;" >Learn a new language ! <br /> INCREMENTORS</p>
+       <div class="div10"> 
+            <p class="multi" style="text-align: center;" >Learn these languages</p>
         </div>
         <div class="div11">
             <h1 id="title">Code Clicker</h1>
-        </div>
+        </div>  
         <div class="div12"> 
             
         </div>
@@ -71,44 +71,51 @@
         <div class="div18"> 
             <main class="itemBox">
                 <div class="popup" ><button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover" onclick="multiHtml()">
-                    <span class="popuptext" id="tutoHtml" value="tutoHtml">Double le rendement du FrontEnd.</span> </button></div>
+                    <span class="popuptext" id="tutoHtml" value="tutoHtml">Allows the front-end staff to express their creativity ya'know.</span> </button></div>
                 <div class="popup" ><button id="iconJS" style="background: url('png/js.png'); background-size: cover" onclick="multiJs()">
-                    <span class="popuptext" id="tutoJs" value="tutoJs">Vous fait perdre l'envie de vivre.</span></button></div>
+                    <span class="popuptext" id="tutoJs" value="tutoJs">Makes you loose the will to live times two.</span></button></div>
                 <div class="popup" ><button id="iconPHP" style="background: url('png/php.png'); background-size: cover" onclick="multiPHP()">
-                    <span class="popuptext" id="tutoPHP" value="tutoPHP">Double le rendement du BackEnd.</span></button></div>
+                    <span class="popuptext" id="tutoPHP" value="tutoPHP">Whip those anonymous back-end slaves to make them work faster.</span></button></div>
             
         </div>
         <div class="barIcon2">
-                    <button id="iconC"  style="background: url('png/c-.png'); background-size: cover"></button>
-                    <button id="iconJava" style="background: url('png/java.png'); background-size: cover;"></button>
-                    <button id="iconKotlin" style="background: url('png/kotlin.png'); background-size: cover; 
-
-                    "></button>
+            <div class="popup" ><button id="iconC"  style="background: url('png/c-.png'); background-size: cover" onclick="multiC()">
+                <span class="popuptext" id="tutoC" value="tutoC">C+ gets even more powerfull.</span></button></div>
+            <div class="popup" ><button id="iconJava" style="background: url('png/java.png'); background-size: cover;" onclick="multiJava()">
+                <span class="popuptext" id="tutoJava" value="tutoJava">You get double the.</span></button></div>
+            <div class="popup" ><button id="iconKotlin" style="background: url('png/kotlin.png'); background-size: cover;" onclick="multiKotlin()">
+                <span class="popuptext" id="tutoKotlin" value="tutoKotlin">You try to guess the purpose of this language twice as hard.</span></button></div>
                 
         </div>
         <div class="baricon3">
-                    <button id="iconPython" style="background: url('png/python.png'); background-size: cover;"></button>
-                    <button id="iconRuby" style="background: url('png/ruby.png'); background-size: cover; "></button>
+            <div class="popup" ><button id="iconPython" style="background: url('png/python.png'); background-size: cover;" onclick="multiPython()">
+                <span class="popuptext" id="tutoPython" value="tutoPython">You can now code life itself into existence.</span></button></div>
+            <div class="popup" ><button id="iconRuby" style="background: url('png/ruby.png'); background-size: cover; " onclick="multiRuby()">
+                <span class="popuptext" id="tutoRuby" value="tutoRuby">Double le rendement du Dev Manager.</span></button></div>
         </div>
         <div class="espace">
-            <p>Multiplicators (Slaves)</p>
+            <p class="littleH" >Build Your Team</p>
         </div>
     </main>
 
         <div class="div19"> 
+            <img class="dante" src="png/dantebl.png" alt="el famoso dante">
+                <span class="popuptext" id="danteSay" value="danteSay">- I swear if I see one more 'Hello World!'...</span></img>
+                
             <!--
             <figure>
                 <img src="https://www.tomsguide.fr/content/uploads/sites/2/2020/08/morpheus-matrix.jpg" id="morpheus"/>
-              </figure>
--->
+              </figure>-->
             <!-- <div class="popup" > Achievement <br>
                 <span class="popuptext" id="myPopup" value="myPopup">You are now able to do the bare minimum</span>
               </div>         -->
         </div>
         <div class="div20">
+            <p class="lineC"> Lines of code</p>
              <a type="number" id="score"></a>
         </div>
         <div class="clickValeur">
+            <p class="multipliX"> Multiplier x</p>
             <a type="number" id="clickVal"></a>
         </div>
         <div class="div22">
@@ -122,8 +129,8 @@
    
             
   
-        <script src="script.js"></script>
-        <script src="scriptlow.js"></script>
+<script src="script.js"></script>
+<script src="scriptlow.js"></script>
      
 </body>
 </html>
