@@ -1,13 +1,10 @@
 # CookieClicker
 
 ## Code Clicker
+https://JilaniN.github.io/CookieClicker/
 
 ## Instructions
 Her are the instruction we received from our coaches.
-
-## Lien du site
-
-https://clement-leger.github.io/CookieClicker/
 
 ### Step 1: base structure
 
