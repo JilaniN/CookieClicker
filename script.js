@@ -23,7 +23,7 @@ let prixPython = 1200000;
 let prixRuby = 6600000;
 
 // variables de prix d'auto-clics
-let prixFront = 1;
+let prixFront = 10000;
 let prixBack = 25000;
 let prixFull = 100000;
 let prixSenior = 250000;
