@@ -5,6 +5,10 @@
 ## Instructions
 Her are the instruction we received from our coaches.
 
+## Lien du site
+
+https://clement-leger.github.io/CookieClicker/
+
 ### Step 1: base structure
 
 Write the base structure for the project in HTML, CSS and JavaScript. Within the HTML, put a click button which will increment a counter and a label initialised at 0 to display said counter.  
