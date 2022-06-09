@@ -41,11 +41,11 @@
         <div class="div8"> 
            <button type="button" value="Ruby" id="Ruby" onclick="upgradeRuby()">Ruby</button>
         </div>
-        <!--<div class="div9">
+        <!--<div class="div9">²
             <input type="button" value="Swift" id="Swift" onclick="upgradeSwift()">
              </div>-->
         <div class="div10"> 
-            <p class="multi" style="text-align: center;" >Multiplicateurs</p>
+            <p class="multi" style="text-align: center;" >Learn a new language ! <br /> INCREMENTORS</p>
         </div>
         <div class="div11">
             <h1 id="title">Code Clicker</h1>
@@ -70,30 +70,39 @@
         </div>
         <div class="div18"> 
             <main class="itemBox">
-                <button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover">
-                   
-                </button>
-                <button id="iconJS" style="background: url('png/js.png'); background-size: cover"></button>
-                <button id="iconPHP" style="background: url('png/php.png'); background-size: cover"></button>
+                <div class="popup" ><button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover" onclick="multiHtml()">
+                    <span class="popuptext" id="tutoHtml" value="tutoHtml">Double le rendement du FrontEnd.</span> </button></div>
+                <div class="popup" ><button id="iconJS" style="background: url('png/js.png'); background-size: cover" onclick="multiJs()">
+                    <span class="popuptext" id="tutoJs" value="tutoJs">Vous fait perdre l'envie de vivre.</span></button></div>
+                <div class="popup" ><button id="iconPHP" style="background: url('png/php.png'); background-size: cover" onclick="multiPHP()">
+                    <span class="popuptext" id="tutoPHP" value="tutoPHP">Double le rendement du BackEnd.</span></button></div>
             
         </div>
         <div class="barIcon2">
                     <button id="iconC"  style="background: url('png/c-.png'); background-size: cover"></button>
                     <button id="iconJava" style="background: url('png/java.png'); background-size: cover;"></button>
-                    <button id="iconKotlin" style="background: url('png/programming-language.png'); background-size: cover;"></button>
+                    <button id="iconKotlin" style="background: url('png/kotlin.png'); background-size: cover; 
+
+                    "></button>
                 
         </div>
         <div class="baricon3">
                     <button id="iconPython" style="background: url('png/python.png'); background-size: cover;"></button>
-                    <button id="iconRuby" style="background: url('png/java.png'); background-size: cover;"></button>
+                    <button id="iconRuby" style="background: url('png/ruby.png'); background-size: cover; "></button>
         </div>
 
     </main>
 
         <div class="div19"> 
-            <div class="popup" > Achievement <br>
+            <!--
+            <figure>
+                <img src="https://www.tomsguide.fr/content/uploads/sites/2/2020/08/morpheus-matrix.jpg" id="morpheus"/>
+              </figure>
+-->
+            <!-- <div class="popup" > Achievement <br>
                 <span class="popuptext" id="myPopup" value="myPopup">You are now able to do the bare minimum</span>
-              </div>        </div>
+              </div>         -->
+        </div>
         <div class="div20">
              <a type="number" id="score"></a>
         </div>
